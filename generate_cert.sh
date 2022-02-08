@@ -1,7 +1,7 @@
 # !/bin/bash
 git clone https://github.com/michaelklishin/tls-gen .tls-gen
 cd .tls-gen/basic
-make PASSWORD=bunnies
+make PASSWORD=bunnies CN=mydockerhost
 make verify
 make info
 ls -l ./result

@@ -13,9 +13,7 @@ copy rabbitmq.conf /etc/rabbitmq/
 # copy reconnect.js /usr/src/
 # copy client-cert /usr/src/client-cert
 
-
 # RUN npm install .
-
 
 # CMD ["npm", "start"]
 
