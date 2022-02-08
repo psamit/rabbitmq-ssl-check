@@ -1,0 +1,15 @@
+{
+  "name": "tls-rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reconnect.js",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node reconnect.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
