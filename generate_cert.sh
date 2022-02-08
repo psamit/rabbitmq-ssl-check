@@ -1,11 +1,13 @@
 # !/bin/bash
 git clone https://github.com/michaelklishin/tls-gen .tls-gen
 cd .tls-gen/basic
-make PASSWORD=bunnies CN=mydockerhost
+make PASSWORD=bunnies
 make verify
 make info
 ls -l ./result
-sleep 1
+
+sleep 0.5
+
 cp result/ca_certificate.pem ../../server-cert/
 cp result/server_certificate.pem ../../server-cert/
 cp result/server_key.pem ../../server-cert/

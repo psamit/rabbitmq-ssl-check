@@ -22,6 +22,6 @@ docker rm -f $name
 
 echo "Running new containers"
 
-docker run -d -h myhostname --name $name -p 4071:15671 -p 4072:15672 -p 3112:5672 -p 3111:5671 $tag
+docker run -d --name $name -p 4072:15672 -p 3112:5672 -p 3111:5671 $tag
 
 docker logs -f --tail 100 $name
