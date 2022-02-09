@@ -1,7 +1,7 @@
 const amqp = require('amqplib');
 const path = require('path');
 const fs = require('fs');
-const RABBIT_MQ_URL = `amqp://guest:guest@localhost:3112/`;
+const RABBIT_MQ_URL = `amqps://amit:amit@localhost:3111`;
 const CLIENT_CERT = 'client-cert';
 
 const opts = {
@@ -10,8 +10,7 @@ const opts = {
   key: fs.readFileSync(path.join(__dirname, CLIENT_CERT, 'client_key.pem')),
   passphrase: 'bunnies',
   fail_if_no_peer_cert: true,
-  verify: 'verify_peer',
-  servername: 'ip-10-25-29-116.ap-south-1.compute.internal'
+  verify: 'verify_peer'
 };
 
 
